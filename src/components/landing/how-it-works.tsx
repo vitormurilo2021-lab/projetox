@@ -1,5 +1,6 @@
 import { FileQuestion, Calculator, BarChart, FileSpreadsheet, CheckCircle } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import Image from 'next/image';
 
 interface Step {
   icon: LucideIcon;
@@ -61,6 +62,16 @@ export function HowItWorks() {
               </div>
             ))}
           </div>
+        </div>
+        <div className="mx-auto mt-16 flex max-w-5xl justify-center">
+          <Image
+            src="https://res.cloudinary.com/dmq11clja/image/upload/v1717406482/ChatGPT_Image_28_de_abr._de_2026_17_00_36_ud22ci.webp"
+            alt="Prévia da planilha de organização de casamento"
+            width={1200}
+            height={750}
+            className="rounded-lg shadow-xl"
+            data-ai-hint="spreadsheet preview"
+          />
         </div>
       </div>
     </section>
