@@ -168,7 +168,7 @@ export function SimulatorClient() {
             <h3 className="mb-6 text-center font-headline text-2xl font-bold">💡 Estratégias de Economia Personalizadas</h3>
             <Accordion type="single" collapsible className="w-full">
               {aiResult.costSavingStrategies.map((strategy, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionItem key={index} value={`item-${index}`} className="border-b">
                   <AccordionTrigger className="text-lg">{strategy.category}</AccordionTrigger>
                   <AccordionContent className="space-y-4 px-2 text-base">
                     <p><strong className="text-primary">Sugestão:</strong> {strategy.suggestion}</p>

@@ -28,8 +28,8 @@ import {
     return (
       <section id="faq" className="w-full py-16 md:py-24">
         <div className="container px-4 md:px-6">
-          <div className="mx-auto max-w-3xl space-y-8 text-center">
-            <div className="space-y-4">
+          <div className="mx-auto max-w-3xl space-y-8">
+            <div className="space-y-4 text-center">
               <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Perguntas Frequentes
               </h2>
@@ -38,11 +38,11 @@ import {
               </p>
             </div>
             <div className="text-left">
-                <Accordion type="single" collapsible className="w-full">
+                <Accordion type="single" collapsible className="w-full space-y-4">
                     {faqs.map((faq, index) => (
-                        <AccordionItem key={index} value={`item-${index}`}>
-                            <AccordionTrigger className="text-lg">{faq.question}</AccordionTrigger>
-                            <AccordionContent className="text-base text-muted-foreground">
+                        <AccordionItem key={index} value={`item-${index}`} className="overflow-hidden rounded-lg border bg-card shadow-sm">
+                            <AccordionTrigger className="px-6 text-left text-lg hover:no-underline">{faq.question}</AccordionTrigger>
+                            <AccordionContent className="px-6 pt-2 text-base text-muted-foreground">
                                 {faq.answer}
                             </AccordionContent>
                         </AccordionItem>
