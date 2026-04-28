@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check, Gift } from 'lucide-react';
+import { useState } from 'react';
+import { UpgradePopup } from './upgrade-popup';
 
 const essentialFeatures = [
   'Simulador básico de custo',
@@ -29,7 +31,9 @@ const bonuses = [
 ]
 
 export function Offer() {
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
   return (
+      <>
       <section id="offer" className="w-full py-16 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-4xl space-y-4 text-center">
@@ -59,8 +63,8 @@ export function Offer() {
                 </ul>
               </CardContent>
               <CardFooter>
-                 <Button asChild variant="outline" className="w-full" size="lg">
-                  <Link href="/checkout?plan=essencial">COMEÇAR PELO ESSENCIAL</Link>
+                 <Button variant="outline" className="w-full" size="lg" onClick={() => setIsPopupOpen(true)}>
+                  COMEÇAR PELO ESSENCIAL
                 </Button>
               </CardFooter>
             </Card>
@@ -113,5 +117,7 @@ export function Offer() {
           </div>
         </div>
       </section>
+      <UpgradePopup isOpen={isPopupOpen} onOpenChange={setIsPopupOpen} />
+      </>
   );
 }
