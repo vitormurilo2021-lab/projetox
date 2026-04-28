@@ -50,10 +50,6 @@ export function Offer() {
                 <CardDescription>Ideal para quem quer começar a ter uma noção dos custos.</CardDescription>
               </CardHeader>
               <CardContent className="flex-1 text-left">
-                <div className="mb-6">
-                  <span className="text-4xl font-bold">R$ 10,90</span>
-                  <span className="text-muted-foreground">/pagamento único</span>
-                </div>
                 <ul className="space-y-3">
                   {essentialFeatures.map((feature) => (
                     <li key={feature} className="flex items-center gap-2">
@@ -63,7 +59,14 @@ export function Offer() {
                   ))}
                 </ul>
               </CardContent>
-              <CardFooter>
+              <CardFooter className="flex-col items-start">
+                <div className="mb-4">
+                  <p className="text-muted-foreground">De <span className="line-through">R$ 49,90</span> por</p>
+                  <div>
+                      <span className="text-4xl font-bold">R$ 10,90</span>
+                      <span className="text-muted-foreground">/pagamento único</span>
+                  </div>
+                </div>
                  <Button variant="outline" className="w-full" size="lg" onClick={() => setIsPopupOpen(true)}>
                   COMEÇAR PELO ESSENCIAL
                 </Button>
@@ -90,11 +93,6 @@ export function Offer() {
                 </div>
               </CardHeader>
               <CardContent className="flex-1 space-y-6 text-left">
-                <div className="mb-6">
-                  <span className="text-5xl font-bold">R$ 29,90</span>
-                  <span className="text-muted-foreground">/pagamento único</span>
-                </div>
-
                 <div className="space-y-3">
                     <p className="font-semibold">Tudo do Plano Essencial, e mais:</p>
                     <ul className="space-y-3">
@@ -119,7 +117,14 @@ export function Offer() {
                     </ul>
                 </div>
               </CardContent>
-              <CardFooter>
+              <CardFooter className="flex-col items-start">
+                 <div className="mb-4">
+                  <p className="text-muted-foreground">De <span className="line-through">R$ 99,90</span> por</p>
+                  <div>
+                      <span className="text-5xl font-bold">R$ 29,90</span>
+                      <span className="text-muted-foreground">/pagamento único</span>
+                  </div>
+                </div>
                 <Button asChild className="w-full" size="lg">
                   <Link href="/checkout?plan=completo">QUERO O PLANO COMPLETO</Link>
                 </Button>
