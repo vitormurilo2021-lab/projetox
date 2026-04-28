@@ -32,7 +32,7 @@ export function Hero() {
           </div>
           <div className="flex justify-center">
             <Button asChild size="lg" className="px-8 text-lg">
-              <Link href="/simulator">QUERO PLANEJAR MEU CASAMENTO</Link>
+              <Link href="#offer">QUERO PLANEJAR MEU CASAMENTO</Link>
             </Button>
           </div>
         </div>

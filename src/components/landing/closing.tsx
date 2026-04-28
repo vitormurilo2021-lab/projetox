@@ -11,7 +11,7 @@ export function Closing() {
           </h2>
           <div className="flex justify-center">
             <Button asChild size="lg" variant="secondary" className="px-8 text-lg">
-              <Link href="/simulator">COMEÇAR AGORA</Link>
+              <Link href="#offer">COMEÇAR AGORA</Link>
             </Button>
           </div>
         </div>

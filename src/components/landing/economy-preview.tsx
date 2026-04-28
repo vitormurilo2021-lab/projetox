@@ -52,7 +52,7 @@ export function EconomyPreview() {
               </p>
             </div>
             <Button asChild size="lg" className="mt-4 px-8 text-lg">
-              <Link href="/simulator">QUERO REDUZIR MEUS GASTOS</Link>
+              <Link href="#offer">QUERO REDUZIR MEUS GASTOS</Link>
             </Button>
             <p className="text-xs text-muted-foreground text-center max-w-sm pt-4">
               Esses valores são estimativas baseadas em casamentos reais. O valor exato depende das suas escolhas.
