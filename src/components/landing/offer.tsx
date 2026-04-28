@@ -36,9 +36,6 @@ export function Offer() {
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Escolha o plano ideal para organizar seu casamento sem gastar à toa
             </h2>
-            <p className="text-lg text-muted-foreground md:text-xl">
-              Ambos incluem acesso imediato, mas um deles te mostra exatamente onde economizar mais.
-            </p>
           </div>
           <div className="mx-auto mt-12 grid max-w-5xl items-start gap-8 lg:grid-cols-2">
             {/* Plano Essencial */}
