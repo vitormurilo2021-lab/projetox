@@ -7,11 +7,10 @@ export function Hero() {
       <div className="container px-4 md:px-6">
         <div className="mx-auto grid max-w-4xl gap-6 text-center">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Descubra quanto você realmente vai gastar no seu casamento (antes de gastar)
+            O sistema que corta até 40% dos custos do seu casamento antes de você gastar
           </h1>
           <p className="text-lg text-muted-foreground md:text-xl">
-            Simule, organize e economize com um sistema simples que mostra exatamente onde cortar custos sem perder o que
-            importa
+            Simulador baseado nas suas escolhas + planilha automática + plano guiado que mostra exatamente o que manter e o que eliminar
           </p>
           <div className="flex justify-center">
             <Button asChild size="lg" className="px-8 text-lg">
