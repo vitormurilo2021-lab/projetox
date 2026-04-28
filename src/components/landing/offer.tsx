@@ -103,19 +103,11 @@ export function Offer() {
                         ))}
                     </ul>
                 </div>
-
-                <p className="text-center italic text-muted-foreground">"Com esse plano, você não só organiza — você evita gastar milhares à toa"</p>
-
               </CardContent>
-              <CardFooter className="flex-col gap-4">
+              <CardFooter>
                 <Button asChild className="w-full" size="lg">
                   <Link href="/checkout?plan=completo">QUERO O PLANO COMPLETO</Link>
                 </Button>
-                <div className="text-center">
-                    <p className="text-sm font-bold">Plano Essencial: <span className="font-normal">Apenas noção básica</span></p>
-                    <p className="text-sm font-bold">Plano Completo: <span className="font-normal">Controle total + economia real</span></p>
-                    <p className="mt-2 text-xs font-semibold text-muted-foreground">Mais de 70% escolhem o plano completo</p>
-                </div>
               </CardFooter>
             </Card>
           </div>
