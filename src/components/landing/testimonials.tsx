@@ -43,7 +43,7 @@ export function Testimonials() {
               <Card key={testimonial.name} className="flex flex-col text-left shadow-lg">
                 <CardContent className="flex-1 p-6">
                   <blockquote className="space-y-4">
-                    <p className="text-lg text-foreground">
+                    <p className="text-base text-foreground">
                       “{testimonial.text}”
                     </p>
                   </blockquote>
