@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check, Gift } from 'lucide-react';
@@ -77,6 +78,16 @@ export function Offer() {
               <CardHeader className="text-left">
                 <CardTitle className="text-2xl">Plano Completo</CardTitle>
                 <CardDescription>Planejamento completo + economia real.</CardDescription>
+                <div className="pt-4">
+                  <Image
+                    src="https://res.cloudinary.com/dmq11clja/image/upload/v1717404891/BANNER_CASEI_BARATO_ktb6bj.webp"
+                    alt="Banner mostrando economia no casamento"
+                    width={1200}
+                    height={418}
+                    className="rounded-lg shadow-xl"
+                    data-ai-hint="couple saving money"
+                  />
+                </div>
               </CardHeader>
               <CardContent className="flex-1 space-y-6 text-left">
                 <div className="mb-6">
