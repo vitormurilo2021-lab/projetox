@@ -11,7 +11,6 @@ import { Footer } from '@/components/layout/footer';
 export default function CheckoutPage() {
   const searchParams = useSearchParams();
   const plan = searchParams.get('plan');
-  const fromUpgrade = searchParams.get('upgrade');
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -30,11 +29,6 @@ export default function CheckoutPage() {
               <p className="mb-2 text-lg">
                 Você selecionou o: <span className="font-bold capitalize text-primary">{plan === 'completo' ? "Plano Completo" : "Plano Essencial"}</span>
               </p>
-              {fromUpgrade && (
-                  <p className="text-md font-semibold text-green-600">
-                    Parabéns por aproveitar a oferta de upgrade!
-                  </p>
-              )}
               <Button asChild className="mt-6">
                 <Link href="/">Voltar para a página inicial</Link>
               </Button>
