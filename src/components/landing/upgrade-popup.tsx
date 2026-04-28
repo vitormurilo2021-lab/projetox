@@ -15,7 +15,7 @@ export function UpgradePopup({ isOpen, onOpenChange }: UpgradePopupProps) {
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle className="font-headline text-2xl text-center font-black">Espere — você pode economizar mais!</DialogTitle>
+          <DialogTitle className="font-headline text-2xl text-center font-bold">Espere — você pode economizar mais!</DialogTitle>
           <DialogDescription className="text-center text-base">
             Por apenas <strong className="text-primary">R$ 10 a mais</strong>, você libera o Plano Completo e descobre <strong className="text-primary">exatamente</strong> onde cortar custos para economizar ainda mais no seu casamento.
           </DialogDescription>

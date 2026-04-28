@@ -6,7 +6,7 @@ export function Hero() {
     <section className="w-full py-20 md:py-32 lg:py-40">
       <div className="container px-4 md:px-6">
         <div className="mx-auto grid max-w-4xl gap-6 text-center">
-          <h1 className="font-headline text-4xl font-black tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Descubra quanto você realmente vai gastar no seu casamento (antes de gastar)
           </h1>
           <p className="text-lg text-muted-foreground md:text-xl">

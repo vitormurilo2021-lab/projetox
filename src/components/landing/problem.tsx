@@ -25,7 +25,7 @@ export function Problem() {
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-3xl space-y-8 text-center">
           <div className="space-y-4">
-            <h2 className="font-headline text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl">
+            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               O maior erro de quem vai casar
             </h2>
             <p className="text-lg text-muted-foreground md:text-xl">
@@ -44,7 +44,7 @@ export function Problem() {
             ))}
           </div>
           <blockquote className="border-l-4 border-primary pl-6 text-left">
-            <p className="font-headline text-2xl font-black italic text-primary md:text-3xl">
+            <p className="font-headline text-2xl font-bold italic text-primary md:text-3xl">
               “Você não precisa gastar mais — só precisa saber onde está gastando errado.”
             </p>
           </blockquote>
