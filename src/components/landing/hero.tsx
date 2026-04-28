@@ -12,7 +12,11 @@ export function Hero() {
               O sistema que corta até 40% dos custos do seu casamento antes de você gastar
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
-              Simulador baseado nas suas escolhas + planilha automática + plano guiado que mostra exatamente o que manter e o que eliminar
+              <strong className="font-bold text-foreground">Simulador</strong> baseado nas suas escolhas +{' '}
+              <strong className="font-bold text-foreground">planilha automática</strong> +{' '}
+              <strong className="font-bold text-foreground">plano guiado</strong> que mostra exatamente o que{' '}
+              <strong className="font-bold text-foreground">manter</strong> e o que{' '}
+              <strong className="font-bold text-foreground">eliminar</strong>
             </p>
           </div>
           <div className="flex justify-center">
