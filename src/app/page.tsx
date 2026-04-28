@@ -8,6 +8,7 @@ import { Offer } from '@/components/landing/offer';
 import { Transformation } from '@/components/landing/transformation';
 import { Guarantee } from '@/components/landing/guarantee';
 import { Closing } from '@/components/landing/closing';
+import { EconomyPreview } from '@/components/landing/economy-preview';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Problem />
         <Solution />
+        <EconomyPreview />
         <HowItWorks />
         <Offer />
         <Transformation />
