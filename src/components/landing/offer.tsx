@@ -82,14 +82,27 @@ export function Offer() {
                 <CardTitle className="text-2xl">Plano Completo</CardTitle>
                 <CardDescription>Planejamento completo + economia real.</CardDescription>
                 <div className="pt-4">
-                  <Image
-                    src="https://res.cloudinary.com/dmq11clja/image/upload/v1717404891/BANNER_CASEI_BARATO_ktb6bj.webp"
-                    alt="Banner mostrando economia no casamento"
-                    width={1200}
-                    height={418}
-                    className="rounded-lg shadow-xl"
-                    data-ai-hint="couple saving money"
-                  />
+                  <div className="flex items-center justify-center gap-2">
+                    <Image
+                      src="https://res.cloudinary.com/dmq11clja/image/upload/v1717404891/BANNER_CASEI_BARATO_ktb6bj.webp"
+                      alt="Banner mostrando economia no casamento"
+                      width={600}
+                      height={209}
+                      className="w-1/2 rounded-lg object-cover shadow-xl"
+                      data-ai-hint="couple saving money"
+                    />
+                    <Image
+                      src="https://res.cloudinary.com/dmq11clja/image/upload/v1717406482/ChatGPT_Image_28_de_abr._de_2026_17_00_36_ud22ci.webp"
+                      alt="Prévia da planilha de organização de casamento"
+                      width={600}
+                      height={375}
+                      className="w-1/2 rounded-lg object-cover shadow-xl"
+                      data-ai-hint="spreadsheet preview"
+                    />
+                  </div>
+                  <p className="mt-2 text-center text-sm font-semibold text-foreground">
+                    PLANO COMPLETO + BÔNUS EXCLUSIVOS
+                  </p>
                 </div>
               </CardHeader>
               <CardContent className="flex-1 space-y-6 text-left">
