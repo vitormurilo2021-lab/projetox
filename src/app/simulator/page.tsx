@@ -10,7 +10,7 @@ export default function SimulatorPage() {
         <section className="w-full py-12 md:py-20 lg:py-24">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-3xl space-y-4 text-center">
-              <h1 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h1 className="font-headline text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl">
                 Simulador de Casamento Inteligente
               </h1>
               <p className="text-lg text-muted-foreground md:text-xl">

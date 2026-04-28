@@ -41,7 +41,7 @@ export function HowItWorks() {
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-4xl space-y-8">
           <div className="space-y-4 text-center">
-            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            <h2 className="font-headline text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl">
               Como Funciona?
             </h2>
             <p className="text-lg text-muted-foreground md:text-xl">

@@ -165,7 +165,7 @@ export function SimulatorClient() {
 
         {aiResult && (
           <div className="mt-12">
-            <h3 className="mb-6 text-center font-headline text-2xl font-bold">💡 Estratégias de Economia Personalizadas</h3>
+            <h3 className="mb-6 text-center font-headline text-2xl font-black">💡 Estratégias de Economia Personalizadas</h3>
             <Accordion type="single" collapsible className="w-full">
               {aiResult.costSavingStrategies.map((strategy, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>

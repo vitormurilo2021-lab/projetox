@@ -21,7 +21,7 @@ export function Transformation() {
             ))}
           </div>
           <blockquote className="border-l-4 border-primary pl-6 text-left">
-            <p className="font-headline text-3xl font-semibold italic text-primary md:text-4xl">
+            <p className="font-headline text-3xl font-black italic text-primary md:text-4xl">
               Você para de adivinhar e começa a decidir.
             </p>
           </blockquote>
