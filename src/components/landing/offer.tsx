@@ -89,7 +89,7 @@ export function Offer() {
                       width={600}
                       height={209}
                       className="w-1/2 rounded-lg object-cover shadow-xl"
-                      data-ai-hint="couple saving money"
+                      data-ai-hint="couple saving"
                     />
                     <Image
                       src="https://res.cloudinary.com/dmq11clja/image/upload/v1717406482/ChatGPT_Image_28_de_abr._de_2026_17_00_36_ud22ci.webp"
@@ -139,7 +139,7 @@ export function Offer() {
                   </div>
                 </div>
                 <Button asChild className="w-full" size="lg">
-                  <Link href="/checkout?plan=completo">QUERO O PLANO COMPLETO</Link>
+                  <a href="https://pay.wiapy.com/lI-h-lSjzg">QUERO O PLANO COMPLETO</a>
                 </Button>
               </CardFooter>
             </Card>

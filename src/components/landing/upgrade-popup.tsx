@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog';
 import { Zap } from 'lucide-react';
@@ -44,10 +43,10 @@ export function UpgradePopup({ isOpen, onOpenChange }: UpgradePopupProps) {
 
         <DialogFooter className="flex flex-col gap-2 sm:flex-col sm:space-x-0">
           <Button asChild size="lg">
-            <Link href="/checkout?plan=completo&price=19.90">EU QUERO A OFERTA!</Link>
+            <a href="https://pay.wiapy.com/Iyha8XoywQ">EU QUERO A OFERTA!</a>
           </Button>
-          <Button asChild variant="ghost" size="sm" onClick={() => onOpenChange(false)}>
-            <Link href="/checkout?plan=essencial">Não, obrigado. Continuar com o Essencial</Link>
+          <Button asChild variant="ghost" size="sm">
+            <a href="https://pay.wiapy.com/fmH551Jot">Não, obrigado. Continuar com o Essencial</a>
           </Button>
         </DialogFooter>
       </DialogContent>
