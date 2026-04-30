@@ -7,11 +7,11 @@ Este é um projeto Next.js 15 configurado com Genkit para Inteligência Artifici
 Para que o simulador de IA funcione, o deploy **não** pode ser estático (não use a pasta `out`). A Netlify suporta o Next.js dinâmico nativamente.
 
 ### 1. Onde encontrar o Terminal?
-O terminal fica na **parte inferior desta tela** no Firebase Studio. Procure pela aba **"Terminal"**. É nela que você digitará os comandos abaixo.
+**IMPORTANTE:** Não use o "Web Console". O terminal fica na parte inferior desta tela, em uma aba chamada especificamente **"Terminal"**. É nela que você digitará os comandos abaixo.
 
 ### 2. Enviar para o GitHub
 1. Crie um repositório vazio no seu [GitHub](https://github.com/new).
-2. No terminal aqui embaixo, digite:
+2. No **Terminal** (não no Web Console), digite um por um:
    ```bash
    git init
    git add .
@@ -26,7 +26,6 @@ O terminal fica na **parte inferior desta tela** no Firebase Studio. Procure pel
 2. A Netlify detectará o Next.js automaticamente.
 3. **Variáveis de Ambiente (CRÍTICO):** No painel da Netlify, vá em *Site Settings > Environment Variables* e adicione:
    - `GEMINI_API_KEY`: Sua chave da API do Google Gemini.
-   - Isso é necessário para que a IA consiga gerar as estratégias de economia.
 
 ## Tecnologias utilizadas
 - Next.js 15 (App Router)
