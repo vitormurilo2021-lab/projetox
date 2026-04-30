@@ -2,29 +2,34 @@
 
 Este é um projeto Next.js 15 configurado com Genkit para Inteligência Artificial.
 
-## Como configurar o deploy na Netlify (Mantendo a IA ativa)
+## 🚀 Como fazer o Deploy e manter a IA funcionando
 
-Para que o simulador de IA funcione, o deploy deve ser feito de forma dinâmica (não use a pasta `out`).
+Para que o simulador de IA funcione, o deploy **não** pode ser estático (não use a pasta `out`). A Netlify suporta o Next.js dinâmico nativamente.
 
-### 1. Enviar para o GitHub
-1. Crie um repositório no GitHub.
-2. No terminal:
+### 1. Onde encontrar o Terminal?
+O terminal fica na **parte inferior desta tela** no Firebase Studio. Procure pela aba **"Terminal"**. É nela que você digitará os comandos abaixo.
+
+### 2. Enviar para o GitHub
+1. Crie um repositório vazio no seu [GitHub](https://github.com/new).
+2. No terminal aqui embaixo, digite:
    ```bash
    git init
    git add .
    git commit -m "feat: setup projeto com IA"
    git branch -M main
-   git remote add origin URL_DO_SEU_REPOSITORIO
+   git remote add origin URL_DO_SEU_REPOSITORIO_COPIADA_DO_GITHUB
    git push -u origin main
    ```
 
-### 2. Configurar na Netlify
-1. Conecte o repositório do GitHub na Netlify.
-2. A configuração padrão será detectada automaticamente através do arquivo `netlify.toml`.
-3. **Variáveis de Ambiente:** No painel da Netlify, adicione a chave `GEMINI_API_KEY` nas configurações de ambiente (Environment Variables) para que o simulador possa realizar as chamadas de IA.
+### 3. Configurar na Netlify
+1. Conecte seu repositório do GitHub na Netlify.
+2. A Netlify detectará o Next.js automaticamente.
+3. **Variáveis de Ambiente (CRÍTICO):** No painel da Netlify, vá em *Site Settings > Environment Variables* e adicione:
+   - `GEMINI_API_KEY`: Sua chave da API do Google Gemini.
+   - Isso é necessário para que a IA consiga gerar as estratégias de economia.
 
 ## Tecnologias utilizadas
 - Next.js 15 (App Router)
 - Tailwind CSS & Shadcn UI
-- Firebase (Configurado para o futuro)
+- Firebase
 - Genkit (IA para estratégias de economia)
