@@ -7,7 +7,7 @@ Este é um projeto Next.js 15 configurado com Genkit para Inteligência Artifici
 Para que o simulador de IA funcione, o deploy **não** pode ser estático (não use a pasta `out`). A Netlify suporta o Next.js dinâmico nativamente.
 
 ### 1. Onde encontrar o Terminal?
-**IMPORTANTE:** Não use o "Web Console". O terminal fica na parte inferior desta tela, em uma aba chamada especificamente **"Terminal"**. É nela que você digitará os comandos abaixo.
+**IMPORTANTE:** Não use o "Web Console". O terminal fica na parte inferior desta tela, em uma aba chamada especificamente **"Terminal"**. É nela que você digitará os comandos abaixo. Se não estiver vendo, procure uma barra cinza no rodapé e puxe-a para cima.
 
 ### 2. Enviar para o GitHub
 1. Crie um repositório vazio no seu [GitHub](https://github.com/new).
