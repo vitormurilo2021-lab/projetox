@@ -1,35 +1,30 @@
 # Casei Barato — Simulador de Casamento Inteligente
 
-Este é um projeto Next.js 15 configurado com Genkit para Inteligência Artificial.
+Este é um projeto Next.js 15 configurado com Genkit para Inteligência Artificial. Para que o simulador funcione, o deploy deve ser dinâmico.
 
-## 🚀 Como fazer o Deploy e manter a IA funcionando
+## 🚀 Passo a Passo para o Deploy na Netlify
 
-Para que o simulador de IA funcione, o deploy **não** pode ser estático (não use a pasta `out`). A Netlify suporta o Next.js dinâmico nativamente.
+### 1. Subir para o GitHub (Terminal da IDE)
+Se você já autorizou o VS Code e rodou os comandos `git push`, seu código já está no ar. Caso contrário, use o **Terminal** abaixo:
+1. `git add .`
+2. `git commit -m "feat: site oficial"`
+3. `git push -u origin main`
 
-### 1. Onde encontrar o Terminal?
-O terminal fica na parte inferior desta tela, em uma aba chamada especificamente **"Terminal"**. Não use o "Web Console".
+### 2. Configurar na Netlify
+1. No painel da Netlify, clique em **Add new site** > **Import an existing project**.
+2. Conecte seu GitHub e selecione este repositório.
+3. A Netlify detectará o Next.js automaticamente. Mantenha o diretório de publicação como `.next`.
 
-### 2. Enviar para o GitHub
-1. Crie um repositório vazio no seu [GitHub](https://github.com/new).
-2. No **Terminal**, digite um por um:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: setup projeto com IA"
-   git branch -M main
-   git remote add origin URL_DO_SEU_REPOSITORIO
-   git push -u origin main
-   ```
-   *Nota: Se abrir uma tela de "Autorizar Visual Studio Code", clique no botão verde para permitir o envio dos arquivos.*
-
-### 3. Configurar na Netlify
-1. Conecte seu repositório do GitHub na Netlify.
-2. A Netlify detectará o Next.js automaticamente.
-3. **Variáveis de Ambiente (MUITO IMPORTANTE):** No painel da Netlify, vá em *Site Settings > Environment Variables* e adicione:
-   - `GEMINI_API_KEY`: Sua chave da API do Google Gemini. Sem isso, o simulador dará erro.
+### 3. Configurar a IA (MUITO IMPORTANTE)
+Para o simulador de economia funcionar, você precisa adicionar sua chave de API do Google:
+1. Na Netlify, vá em **Site Settings** > **Environment Variables**.
+2. Clique em **Add a variable**.
+3. **Key:** `GEMINI_API_KEY`
+4. **Value:** (Sua chave gerada em aistudio.google.com)
+5. Clique em **Save** e faça um novo deploy se necessário.
 
 ## Tecnologias utilizadas
 - Next.js 15 (App Router)
 - Tailwind CSS & Shadcn UI
-- Firebase
 - Genkit (IA para estratégias de economia)
+- UTMfy Pixel (Rastreamento)
