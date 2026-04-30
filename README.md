@@ -7,25 +7,26 @@ Este é um projeto Next.js 15 configurado com Genkit para Inteligência Artifici
 Para que o simulador de IA funcione, o deploy **não** pode ser estático (não use a pasta `out`). A Netlify suporta o Next.js dinâmico nativamente.
 
 ### 1. Onde encontrar o Terminal?
-**IMPORTANTE:** Não use o "Web Console". O terminal fica na parte inferior desta tela, em uma aba chamada especificamente **"Terminal"**. É nela que você digitará os comandos abaixo. Se não estiver vendo, procure uma barra cinza no rodapé e puxe-a para cima.
+O terminal fica na parte inferior desta tela, em uma aba chamada especificamente **"Terminal"**. Não use o "Web Console".
 
 ### 2. Enviar para o GitHub
 1. Crie um repositório vazio no seu [GitHub](https://github.com/new).
-2. No **Terminal** (não no Web Console), digite um por um:
+2. No **Terminal**, digite um por um:
    ```bash
    git init
    git add .
    git commit -m "feat: setup projeto com IA"
    git branch -M main
-   git remote add origin URL_DO_SEU_REPOSITORIO_COPIADA_DO_GITHUB
+   git remote add origin URL_DO_SEU_REPOSITORIO
    git push -u origin main
    ```
+   *Nota: Se abrir uma tela de "Autorizar Visual Studio Code", clique no botão verde para permitir o envio dos arquivos.*
 
 ### 3. Configurar na Netlify
 1. Conecte seu repositório do GitHub na Netlify.
 2. A Netlify detectará o Next.js automaticamente.
-3. **Variáveis de Ambiente (CRÍTICO):** No painel da Netlify, vá em *Site Settings > Environment Variables* e adicione:
-   - `GEMINI_API_KEY`: Sua chave da API do Google Gemini.
+3. **Variáveis de Ambiente (MUITO IMPORTANTE):** No painel da Netlify, vá em *Site Settings > Environment Variables* e adicione:
+   - `GEMINI_API_KEY`: Sua chave da API do Google Gemini. Sem isso, o simulador dará erro.
 
 ## Tecnologias utilizadas
 - Next.js 15 (App Router)
