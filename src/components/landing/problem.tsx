@@ -43,11 +43,6 @@ export function Problem() {
               </Card>
             ))}
           </div>
-          <blockquote className="border-l-4 border-primary pl-6 text-left">
-            <p className="font-headline text-2xl font-bold italic text-primary md:text-3xl">
-              “Você não precisa gastar mais — só precisa saber onde está gastando errado.”
-            </p>
-          </blockquote>
         </div>
       </div>
     </section>
