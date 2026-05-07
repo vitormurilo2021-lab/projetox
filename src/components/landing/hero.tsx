@@ -9,7 +9,7 @@ export function Hero() {
         <div className="mx-auto grid max-w-4xl gap-8 text-center">
           <div className="space-y-4">
             <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              O sistema que <span className="text-accent">corta até 40% dos custos do seu casamento</span> antes de você gastar
+              O simulador de gastos que vai te ajudar fazer um casamento lindo por <span className="text-accent">menos de R$ 7.326!</span>
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
               <strong className="font-bold text-foreground">Simulador</strong> baseado nas suas escolhas +{' '}
