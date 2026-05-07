@@ -20,11 +20,6 @@ export function Transformation() {
               </div>
             ))}
           </div>
-          <blockquote className="border-l-4 border-primary pl-6 text-left">
-            <p className="font-headline text-3xl font-bold italic text-primary md:text-4xl">
-              Você para de adivinhar e começa a decidir.
-            </p>
-          </blockquote>
         </div>
       </div>
     </section>
